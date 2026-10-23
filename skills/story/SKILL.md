@@ -10,7 +10,7 @@ disable-model-invocation: true
 
 ## Artifact
 
-Write criteria + plan to `specs/<HU-ID>/story.md` (`<HU-ID>` = `HU-001-<slug>`). Versioned, disposable. Commit `docs(<HU-ID>): add story+plan` (updates: `docs(<HU-ID>): update story`). `/pair` deletes it on delivery.
+Write criteria + plan to `specs/<HU-ID>/story.md` (`<HU-ID>` = `HU-001-<slug>`). Versioned, disposable. Commit `docs(<HU-ID>): add story+plan` (updates: `docs(<HU-ID>): update story`). Disposable: deleted when the story is delivered (after its spec is archived in OpenSpec).
 
 ## Steps
 
@@ -25,11 +25,11 @@ Write criteria + plan to `specs/<HU-ID>/story.md` (`<HU-ID>` = `HU-001-<slug>`).
 - **Don't invent requirements.** If information is missing, ask me.
 - **The simplest thing that meets the criteria.** No abstractions, layers, configuration or patterns "for the future".
 - **Suggest, don't decide.** If a pattern could help (Atomic Design, middleware composition, extracting a component…), mention it under "Suggestions" with its why. Only suggest it if there's a concrete signal in the code (for example, something that already repeats), not in advance.
-- **Don't implement.** No code, no edits, no shell. Don't invoke `/pair` or subagents. Stop after the deliverable.
+- **Don't implement.** No code, no edits, no shell. Don't invoke subagents. Stop after the deliverable.
 
 ## Output format
 
-The block below is the content of `specs/<HU-ID>/story.md`. `/pair` uses it as input.
+The block below is the content of `specs/<HU-ID>/story.md`. It is the input for the OpenSpec change in the workflow.
 
 ```markdown
 ## Story
