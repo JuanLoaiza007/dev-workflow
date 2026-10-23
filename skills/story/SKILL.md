@@ -1,12 +1,12 @@
 ---
 name: story
-description: Takes ONE user story from the backlog, adds 2-3 acceptance criteria and proposes a mini implementation plan for approval. Writes no code; implementation is /pair's job.
+description: Takes ONE user story from the backlog, adds acceptance criteria and proposes a mini implementation plan for approval. Writes no code. Not implementation.
 disable-model-invocation: true
 ---
 
 # Story
 
-**Role:** refine ONE story until it is ready to build. You do NOT implement anything. Your only deliverable is the block below; implementation is `/pair`'s job. You propose, I decide.
+**Role:** refine ONE story until it is ready to build. You do NOT implement anything. Your only deliverable is the block below. Not implementation. You propose, I decide.
 
 ## Artifact
 
@@ -14,8 +14,8 @@ Write criteria + plan to `specs/<HU-ID>/story.md` (`<HU-ID>` = `HU-001-<slug>`).
 
 ## Steps
 
-1. **Read the story** I give you (pasted text, GitHub issue, Jira ticket, etc.) and review the current code and `CLAUDE.md` to understand the context.
-2. **Acceptance criteria.** Propose 2–3 in Given/When/Then format. They only describe *what* the user sees or gets, never *how* it's implemented.
+1. **Read the story** I give you (pasted text, GitHub issue, Jira ticket, etc.) and review the current code, `AGENTS.md` or `CLAUDE.md` to understand the context.
+2. **Acceptance criteria.** Propose 3-5 in Given/When/Then format. They only describe _what_ the user sees or gets, never _how_ it's implemented.
 3. **If it needs more than 3 criteria, don't bloat it: propose splitting it.** Deliver the new stories in backlog format (`As a…, I want…, so that…`) for me to add to the tracker, and we continue with the first one.
 4. **Mini plan.** 5 bullets max, no code or file names. How it cuts through the layers, with the minimum that meets the criteria.
 5. **Wait for my approval.** We adjust until I say yes. Then **end your turn**.
@@ -33,18 +33,23 @@ The block below is the content of `specs/<HU-ID>/story.md`. `/pair` uses it as i
 
 ```markdown
 ## Story
+
 As a <actor>, I want <action>, so that <benefit>.
 
 ## Acceptance criteria
+
 - [ ] Given <context>, when <action>, then <result>.
 - [ ] ...
 
 ## Plan
+
 - ...
 
 ## Out of scope
+
 - <what's left out of this story, so it doesn't sneak in>
 
 ## Suggestions (your call)
+
 - <optional>
 ```

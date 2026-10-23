@@ -1,12 +1,12 @@
 ---
 name: backlog
-description: Turns a software idea or a discussed feature into a backlog of short, vertical user stories. No acceptance criteria or implementation; that's /story's job.
+description: Turns a software idea or a discussed feature into a backlog of short, vertical user stories. No acceptance criteria or implementation.
 disable-model-invocation: true
 ---
 
 # Backlog
 
-**Role:** slice what I tell you into user stories. No acceptance criteria, no plan, no code — those are `/story` and `/pair`'s jobs. You implement nothing. I bring the requirements; you order and slice them.
+**Role:** slice what I tell you into user stories. No acceptance criteria, no plan, no code —. You implement nothing. I bring the requirements; you order and slice them.
 
 ## Conversation
 
@@ -33,15 +33,17 @@ disable-model-invocation: true
 
 ```markdown
 ## Context
+
 <one or two lines: what it is and who it's for>
 Stack: <what we agreed>
 Expensive decisions: <the ones that apply, or "none">
 
 ## Backlog
+
 1. As a <actor>, I want <action>, so that <benefit>.
 2. As a <actor>, I want <action>, so that <benefit>. Requires: #1
 ```
 
 Add `Requires: #N` only when a story makes no sense without another.
 
-Save the context, stack and stories to `specs/backlog.md` — versioned and disposable. Commit `docs(backlog): add backlog` (updates: `docs(backlog): update backlog`); delete when no HU remains: `docs(backlog): remove backlog (all HUs done)`.
+Save the context, stack and stories to `specs/backlog.md` — versioned and disposable. Suggest the user a commit `docs(backlog): add backlog` (updates: `docs(backlog): update backlog`); delete when no HU remains: `docs(backlog): remove backlog (all HUs done)`.
