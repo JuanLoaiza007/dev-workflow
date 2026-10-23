@@ -35,7 +35,7 @@ Per tool root (e.g. `~/.claude/.dev-workflow.json`):
   "installed": {
     "skills/backlog/SKILL.md": "skills/backlog/SKILL.md",
     "skills/story/SKILL.md": "skills/story/SKILL.md",
-    "commands/init-workflow.md": "commands/claude/init-workflow.md"
+    "commands/devflow-init.md": "commands/claude/devflow-init.md"
   }
 }
 ```
@@ -69,6 +69,6 @@ Default `install` lists detected tools only (`--all` for everything). Rows are p
 
 - Editing agent configs (settings.json, MCP, PATH, shellrc).
 - Installing OpenSpec or running `openspec init` in projects.
-- Writing into project `AGENTS.md` files (that is `/init-workflow` per project).
+- Writing into project `AGENTS.md` files (that is `/devflow-init` per project).
 - Shell completions, brew/nix/deno installs, native installers.
 - Telemetry, login, accounts.

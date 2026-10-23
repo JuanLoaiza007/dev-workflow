@@ -31,7 +31,7 @@ test("uninstall removes exactly the owned files and keeps unrelated ones", () =>
   assert.equal(removed.length, 3);
   assert.ok(removed.includes(installedDest("skills/backlog/SKILL.md")));
   assert.ok(removed.includes(installedDest("skills/story/SKILL.md")));
-  assert.ok(removed.includes(installedDest("commands/init-workflow.md")));
+  assert.ok(removed.includes(installedDest("commands/devflow-init.md")));
   assert.ok(fs.existsSync(foreign), "unrelated file must survive");
   assert.ok(!fs.existsSync(path.join(tmp, ".claude", MANIFEST_FILE)));
   assert.equal(readManifest(tool), null);

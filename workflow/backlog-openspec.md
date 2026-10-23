@@ -1,6 +1,6 @@
 # Workflow: Backlog + OpenSpec per story
 
-Canonical AGENTS.md section. This file is the single source of truth; the `init-workflow` command embeds a copy. Update both and bump the version.
+Canonical AGENTS.md section. This file is the single source of truth; the `devflow-init` command embeds a copy. Update both and bump the version.
 
 ```markdown
 <!-- workflow:backlog-openspec v1.0.0 -->

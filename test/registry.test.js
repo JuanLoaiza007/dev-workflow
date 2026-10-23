@@ -59,8 +59,8 @@ test("tools with a commands dir declare an existing command source", () => {
 });
 
 test("commandDestination returns the file name only", () => {
-  assert.equal(commandDestination(getTool("claude")), "init-workflow.md");
-  assert.equal(commandDestination(getTool("gemini")), "init-workflow.toml");
+  assert.equal(commandDestination(getTool("claude")), "devflow-init.md");
+  assert.equal(commandDestination(getTool("gemini")), "devflow-init.toml");
   assert.equal(commandDestination(getTool("github-copilot")), null); // skills only
 });
 

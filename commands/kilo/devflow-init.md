@@ -1,8 +1,9 @@
 ---
+name: devflow-init
 description: Install or update the "Backlog + OpenSpec per story" workflow section in this project's AGENTS.md. Reports conflicts, never decides.
 ---
 
-# init-workflow
+# devflow-init
 
 Install or update the `workflow:backlog-openspec` section in this project's AGENTS.md.
 

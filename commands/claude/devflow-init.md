@@ -1,7 +1,8 @@
-description = "Install or update the Backlog + OpenSpec per story workflow section in this project's AGENTS.md. Reports conflicts, never decides."
+---
+description: Install or update the "Backlog + OpenSpec per story" workflow section in this project's AGENTS.md. Reports conflicts, never decides.
+---
 
-prompt = """
-# init-workflow
+# devflow-init
 
 Install or update the `workflow:backlog-openspec` section in this project's AGENTS.md.
 
@@ -40,4 +41,3 @@ Rules:
 - The user invokes modes (backlog, story, apply, archive); the agent never switches modes on its own.
 - Alert when a change grows too large or interferes with other backlog stories.
 <!-- /workflow:backlog-openspec -->
-"""

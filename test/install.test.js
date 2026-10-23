@@ -25,10 +25,10 @@ test("install claude writes skills + command + manifest", () => {
   assert.equal(ops.filter((o) => o.status === "installed").length, 3);
   assert.equal(ops[0].rel, "skills/backlog/SKILL.md");
   assert.equal(ops[1].rel, "skills/story/SKILL.md");
-  assert.equal(ops[2].rel, "commands/init-workflow.md");
+  assert.equal(ops[2].rel, "commands/devflow-init.md");
   const manifest = readManifest(tool);
   assert.equal(manifest.tool, "claude");
-  assert.equal(manifest.installed["commands/init-workflow.md"], "commands/claude/init-workflow.md");
+  assert.equal(manifest.installed["commands/devflow-init.md"], "commands/claude/devflow-init.md");
   assert.ok(fs.existsSync(path.join(tmp, ".claude", MANIFEST_FILE)));
 });
 
