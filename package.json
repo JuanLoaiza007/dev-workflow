@@ -1,0 +1,36 @@
+{
+  "name": "@juanloaiza007/dev-workflow",
+  "version": "1.0.0",
+  "description": "Backlog + OpenSpec per story. Installs the backlog/story skills and the init-workflow command into your local AI agents (Claude Code, OpenCode, Kilo, Cursor, Copilot, Gemini, Qwen, Devin, Cline, and the shared .agents tree).",
+  "type": "module",
+  "bin": {
+    "dev-workflow": "bin/dev-workflow.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "skills",
+    "commands",
+    "workflow"
+  ],
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "test": "node --test test/",
+    "check:sync": "node scripts/check-sync.js"
+  },
+  "keywords": [
+    "agents",
+    "skills",
+    "workflow",
+    "backlog",
+    "openspec",
+    "claude",
+    "opencode"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@clack/prompts": "^1.8.1"
+  }
+}
